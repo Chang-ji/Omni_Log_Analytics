@@ -1,0 +1,48 @@
+2022-04-18 08:48:44,218 INFO  [1] FastChargeMultiPort.Form1: ----------------------------------------------------------
+2022-04-18 08:48:44,249 INFO  [1] FastChargeMultiPort.Form1: PROGRAM START SW VER 1.0.09
+2022-04-18 08:48:44,249 INFO  [1] FastChargeMultiPort.Form1: ----------------------------------------------------------
+2022-04-18 08:48:47,390 ERROR [1] FastChargeMultiPort.Database.SQLite.Omni_Private_DB: >>> Exception : code = Error (1), message = System.Data.SQLite.SQLiteException (0x800007BF): SQL logic error
+table Password already exists
+   위치: System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   위치: System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   위치: System.Data.SQLite.SQLiteDataReader.NextResult()
+   위치: System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   위치: System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   위치: System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   위치: FastChargeMultiPort.Database.SQLite.Omni_Private_DB.CommandTextAfterNonQuery(String str) 파일 D:\USER\Desktop\급속 2세대 충전기 구버전 코드 및 디버깅 파일\급속충전기 임시용\옴니\FastChargeMultiPort_Omni(2021-01-27)\FastChargeMultiPort\Database\SQLite\Omni_Private_DB.cs:줄 115
+   위치: FastChargeMultiPort.Database.SQLite.Omni_Private_DB.CreateDefaultTable() 파일 D:\USER\Desktop\급속 2세대 충전기 구버전 코드 및 디버깅 파일\급속충전기 임시용\옴니\FastChargeMultiPort_Omni(2021-01-27)\FastChargeMultiPort\Database\SQLite\Omni_Private_DB.cs:줄 89
+2022-04-18 08:49:11,954 ERROR [1] FastChargeMultiPort.RFID_Reader.RFID_Manager_Comm: >>> Exception : System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: FastChargeMultiPort.RFID_Reader.RFID_Manager_Comm.close() 파일 D:\USER\Desktop\급속 2세대 충전기 구버전 코드 및 디버깅 파일\급속충전기 임시용\옴니\FastChargeMultiPort_Omni(2021-01-27)\FastChargeMultiPort\Mount\Harex_Infotech\RF_Reader\RFID_Manager_Comm.cs:줄 113
+2022-04-18 08:49:16,969 DEBUG [1] FastChargeMultiPort.RFID_Reader.RFID_Manager_Comm: SEND --> 02-01-0B-01-0E-01-EB-00-00-78-7A-03
+2022-04-18 08:50:16,170 INFO  [1] FastChargeMultiPort.Form1: ----------------------------------------------------------
+2022-04-18 08:50:16,232 INFO  [1] FastChargeMultiPort.Form1: PROGRAM START SW VER 1.0.09
+2022-04-18 08:50:16,232 INFO  [1] FastChargeMultiPort.Form1: ----------------------------------------------------------
+2022-04-18 08:50:18,842 ERROR [1] FastChargeMultiPort.Server.OmniEvas.ControlSys_Main: Omni_Socket_Connect_Fail
+2022-04-18 08:50:27,170 DEBUG [1] FastChargeMultiPort.RFID_Reader.RFID_Manager_Comm: SEND --> 02-01-0B-01-0E-01-EB-00-00-78-7A-03
+2022-04-18 08:50:29,795 DEBUG [1] FastChargeMultiPort.RFID_Reader.RFID_Manager_Comm: SEND --> 02-01-0B-01-0E-01-EB-00-00-78-7A-03
+2022-04-18 08:50:34,077 DEBUG [1] FastChargeMultiPort.Mount.SamwonFA.Payment.SFA_Pay_Commo: SEND --> INS:4334  02-20-22-04-18-08-50-34-00-00-06-30-31-30-31-30-31-30-31-30-31-43-34-00-00-95-58-03
+2022-04-18 08:50:34,171 ERROR [1] FastChargeMultiPort.Mount.SamwonFA.Payment.SFA_Pay_Commo: >>> Exception : System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: FastChargeMultiPort.Mount.SamwonFA.Payment.SFA_Pay_Commo.write(Byte[] data) 파일 D:\USER\Desktop\급속 2세대 충전기 구버전 코드 및 디버깅 파일\급속충전기 임시용\옴니\FastChargeMultiPort_Omni(2021-01-27)\FastChargeMultiPort\Mount\SamwonFA\Payment\SFA_Pay_Commo.cs:줄 234
+2022-04-18 08:50:36,671 DEBUG [1] FastChargeMultiPort.RFID_Reader.RFID_Manager_Comm: SEND --> 02-01-0B-01-0E-01-EB-00-00-78-7A-03
+2022-04-18 08:50:48,859 ERROR [7] FastChargeMultiPort.Server.OmniEvas.ControlSys_Main: Omni_Socket_Connect_Fail
+2022-04-18 08:51:18,876 ERROR [13] FastChargeMultiPort.Server.OmniEvas.ControlSys_Main: Omni_Socket_Connect_Fail
+2022-04-18 08:51:28,454 DEBUG [1] FastChargeMultiPort.RFID_Reader.RFID_Manager_Comm: SEND --> 02-01-0B-01-0E-01-EB-00-00-78-7A-03
+2022-04-18 08:51:31,611 DEBUG [1] FastChargeMultiPort.RFID_Reader.RFID_Manager_Comm: SEND --> 02-01-0B-01-0E-01-EB-00-00-78-7A-03
+2022-04-18 08:51:37,627 DEBUG [1] FastChargeMultiPort.RFID_Reader.RFID_Manager_Comm: SEND --> 02-01-0B-01-0E-01-EB-00-00-78-7A-03
+2022-04-18 08:51:48,877 ERROR [14] FastChargeMultiPort.Server.OmniEvas.ControlSys_Main: Omni_Socket_Connect_Fail
+2022-04-18 08:52:32,340 INFO  [1] FastChargeMultiPort.Form1: ----------------------------------------------------------
+2022-04-18 08:52:32,418 INFO  [1] FastChargeMultiPort.Form1: PROGRAM START SW VER 1.0.09
+2022-04-18 08:52:32,418 INFO  [1] FastChargeMultiPort.Form1: ----------------------------------------------------------
+2022-04-18 08:52:35,262 ERROR [1] FastChargeMultiPort.Database.SQLite.Omni_Private_DB: >>> Exception : code = Error (1), message = System.Data.SQLite.SQLiteException (0x800007BF): SQL logic error
+table Password already exists
+   위치: System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   위치: System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   위치: System.Data.SQLite.SQLiteDataReader.NextResult()
+   위치: System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   위치: System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   위치: System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   위치: FastChargeMultiPort.Database.SQLite.Omni_Private_DB.CommandTextAfterNonQuery(String str) 파일 D:\USER\Desktop\급속 2세대 충전기 구버전 코드 및 디버깅 파일\급속충전기 임시용\옴니\FastChargeMultiPort_Omni(2021-01-27)\FastChargeMultiPort\Database\SQLite\Omni_Private_DB.cs:줄 115
+   위치: FastChargeMultiPort.Database.SQLite.Omni_Private_DB.CreateDefaultTable() 파일 D:\USER\Desktop\급속 2세대 충전기 구버전 코드 및 디버깅 파일\급속충전기 임시용\옴니\FastChargeMultiPort_Omni(2021-01-27)\FastChargeMultiPort\Database\SQLite\Omni_Private_DB.cs:줄 89
+2022-04-18 09:54:27,570 DEBUG [1] FastChargeMultiPort.Mount.SamwonFA.Payment.SFA_Pay_Commo: SEND --> INS:4B34  02-20-22-04-18-09-54-27-00-00-06-30-31-30-31-30-31-30-31-30-31-4B-34-00-04-02-00-00-00-EC-FF-03
+2022-04-18 09:54:27,602 ERROR [1] FastChargeMultiPort.Mount.SamwonFA.Payment.SFA_Pay_Commo: >>> Exception : System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: FastChargeMultiPort.Mount.SamwonFA.Payment.SFA_Pay_Commo.write(Byte[] data) 파일 D:\USER\Desktop\급속 2세대 충전기 구버전 코드 및 디버깅 파일\급속충전기 임시용\옴니\FastChargeMultiPort_Omni(2021-01-27)\FastChargeMultiPort\Mount\SamwonFA\Payment\SFA_Pay_Commo.cs:줄 234
