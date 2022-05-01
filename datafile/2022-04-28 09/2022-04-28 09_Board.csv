@@ -1,4 +1,4 @@
-﻿,cg_date_time,emg_btn,charger_status,error_code,soc,enable_volt,enable_ampere,volt,ampere,remain_time,charging_code,state
+﻿,시간,EMG버튼여부,충전상태,충전_에러코드,SOC(%),출력가능_전압(V),출력가능_전류(A),전압(V),전류(A),남은시간(s),충전코드,state
 0,2022-04-28 09:40:20.624,40,2,3,0,0,0,8,0,0,5,100
 1,2022-04-28 09:40:30.715,40,2,3,0,0,0,8,0,0,6,100
 2,2022-04-28 09:40:40.761,40,3,3,42,421,4,359,0,61,8,100

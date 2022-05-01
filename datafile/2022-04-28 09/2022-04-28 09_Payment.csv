@@ -1,4 +1,4 @@
-﻿,cg_date_time,state,payment_amount,approval_code,receive_code,payment_time
+﻿,시간,state,결제금액(원),결제승인번호,응답코드,결제시간
 0,2022-04-28 09:40:15.951,100,,,,
 1,2022-04-28 09:40:16.779,100,,,,
 2,2022-04-28 09:52:05.587,100,,,,

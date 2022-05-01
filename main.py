@@ -6,6 +6,12 @@ from tkinter import filedialog
 from tkinter import *
 import math
 
+# 한글 폰트 사용을 위해서 세팅
+from matplotlib import font_manager, rc
+font_path = r'./godoMaum.ttf'
+font = font_manager.FontProperties(fname=font_path).get_name()
+rc('font', family=font)
+
 def makedirs(path):
    try:
         os.makedirs(path)
@@ -214,16 +220,16 @@ def logDataAnayltics(fie_path):
                 # 시간, 타입, 결제요금, 승인번호, 응답코드, 거래일시
                 payment_data.append([cg_date_time, 600, None, None, payment_code, None])
 
-    server_columns = ['cg_date_time', 'cardtype', 'cardnum', 'server_wattage', 'chargingtime', 'volt', 'ampere', 'state']
-    wattage_columns = ['cg_date_time', 'wattmeter_wattage', 'pre_wattage', 'pre_pre_wattage']
-    volt_columns = ['cg_date_time', 'wattmeter_volt', 'wattmeter_ampere']
-    board_columns = ['cg_date_time' ,'emg_btn', 'charger_status', 'error_code', 'soc', 'enable_volt', 'enable_ampere', 'volt', 'ampere', 'remain_time', 'charging_code', 'state']
-    payment_columns = ['cg_date_time', 'state', 'payment_amount', 'approval_code', 'receive_code', 'payment_time']
+    server_columns = ['시간', '카드타입', '카드번호', '서버_전력량(W)', '충전시간(s)', '전압(V)', '전류(A)', 'state']
+    wattage_columns = ['시간', '현월_전력량(W)', '전월_전력량(W)', '전전월_전력량(W)']
+    volt_columns = ['시간', '전력량계_전압(V)', '전력량계_전류(A)']
+    board_columns = ['시간', 'EMG버튼여부', '충전상태', '충전_에러코드', 'SOC(%)', '출력가능_전압(V)', '출력가능_전류(A)', '전압(V)', '전류(A)', '남은시간(s)', '충전코드', 'state']
+    payment_columns = ['시간', 'state', '결제금액(원)', '결제승인번호', '응답코드', '결제시간']
 
     ananytics_name = 'datafile' + '/' + file_name
     makedirs('./' + ananytics_name)
 
-    f, ax = plt.subplots(1, 1, figsize=(40, 20))
+    f, ax = plt.subplots(1, 1, figsize=(20, 10))
     # 서버 카드 결제 데이터
     if server_send_data:
         server_df = pd.DataFrame(server_send_data, columns=server_columns)
@@ -233,15 +239,15 @@ def logDataAnayltics(fie_path):
 
         server_df_100 = server_df.loc[server_df['state'] == 100]
         server_df_300 = server_df.loc[server_df['state'] == 300]
-        server_df.plot(x='cg_date_time', y='server_wattage', linestyle='--', marker='o', ax=ax)
-        for server_start in server_df_100['cg_date_time']:
+        server_df.plot(x='시간', y='서버_전력량(W)', linestyle='--', marker='o', ax=ax)
+        for server_start in server_df_100['시간']:
             plt.axvline(x=server_start, color='r', linestyle='--', linewidth=1)
-        for server_end in server_df_300['cg_date_time']:
+        for server_end in server_df_300['시간']:
             plt.axvline(x=server_end, color='b', linestyle='--', linewidth=1)
     if wattage_volt_ampere_data:
         volt_ampere_df = pd.DataFrame(wattage_volt_ampere_data, columns=volt_columns)
-        volt_ampere_df.plot(x='cg_date_time', y='wattmeter_volt', marker='o', ax=ax)
-        volt_ampere_df.plot(x='cg_date_time', y='wattmeter_ampere', marker='o', ax=ax)
+        volt_ampere_df.plot(x='시간', y='전력량계_전압(V)', marker='o', ax=ax)
+        volt_ampere_df.plot(x='시간', y='전력량계_전류(A)', marker='o', ax=ax)
     if payment_data:
         payment_data_df = pd.DataFrame(payment_data, columns=payment_columns)
         payment_data_df_name = './' + ananytics_name + '/' + file_name + '_Payment' + '.csv'
@@ -250,21 +256,22 @@ def logDataAnayltics(fie_path):
 
         # 결제
         payment_data_df_payment = payment_data_df.loc[payment_data_df['state'] == 300]
-        for payment_ok_time in payment_data_df_payment['cg_date_time']:
+        for payment_ok_time in payment_data_df_payment['시간']:
             plt.axvline(x=payment_ok_time, color='m', linestyle='--', linewidth=2)
 
         # 부분 취소
         payment_data_df_cancel = payment_data_df.loc[payment_data_df['state'] == 500]
-        for payment_ok_time in payment_data_df_cancel['cg_date_time']:
+        for payment_ok_time in payment_data_df_cancel['시간']:
             plt.axvline(x=payment_ok_time, color='c', linestyle='--', linewidth=2)
 
     plt.grid(True)
     server_picture_name = './' + ananytics_name + '/' + file_name + '_Server' + '_fig' + '.png'
     print(server_picture_name)
+    plt.rc('axes', unicode_minus=False)
     plt.savefig(server_picture_name)
 
     # 전력량계 데이터
-    f, ax = plt.subplots(1, 1, figsize=(40, 20))
+    f, ax = plt.subplots(1, 1, figsize=(20, 10))
     if wattage_wattage_data:
         wattage_df = pd.DataFrame(wattage_wattage_data, columns=wattage_columns)
         wattage_df_name = './' + ananytics_name + '/' + file_name + '_Wattage' + '.csv'
@@ -272,15 +279,16 @@ def logDataAnayltics(fie_path):
         print(wattage_df_name)
 
 
-        wattage_df.plot(x='cg_date_time', y='wattmeter_wattage', marker='o', ax=ax)
+        wattage_df.plot(x='시간', y='현월_전력량(W)', marker='o', ax=ax)
 
     plt.grid(True)
     wattage_picture_name = './' + ananytics_name + '/' + file_name + '_Wattage' + '_fig' + '.png'
     print(wattage_picture_name)
+    plt.rc('axes', unicode_minus=False)
     plt.savefig(wattage_picture_name)
 
     # 보드 데이터
-    f, ax = plt.subplots(1, 1, figsize=(40, 20))
+    f, ax = plt.subplots(1, 1, figsize=(20, 10))
     if board_receive_data:
         board_receive_data_df = pd.DataFrame(board_receive_data, columns=board_columns)
         board_receive_data_df_name = './' + ananytics_name + '/' + file_name + '_Board' + '.csv'
@@ -289,27 +297,28 @@ def logDataAnayltics(fie_path):
 
         board_receive_data_df_8c = board_receive_data_df.loc[board_receive_data_df['state'] == 100]
         # soc 기록
-        board_receive_data_df_8c.plot(x='cg_date_time', y='soc', marker='o', ax=ax)
+        board_receive_data_df_8c.plot(x='시간', y='SOC(%)', marker='o', ax=ax)
 
         # 전압 기록
-        board_receive_data_df_8c.plot(x='cg_date_time', y='volt', marker='o', ax=ax)
+        board_receive_data_df_8c.plot(x='시간', y='전압(V)', marker='o', ax=ax)
 
         # 전류 기록
-        board_receive_data_df_8c.plot(x='cg_date_time', y='ampere', marker='o', ax=ax)
+        board_receive_data_df_8c.plot(x='시간', y='전류(A)', marker='o', ax=ax)
 
         # emg 버튼 기록
-        board_receive_data_df_8c_emg = board_receive_data_df_8c.loc[board_receive_data_df_8c['emg_btn'] == 50]
-        for emg_data_time in board_receive_data_df_8c_emg['cg_date_time']:
+        board_receive_data_df_8c_emg = board_receive_data_df_8c.loc[board_receive_data_df_8c['EMG버튼여부'] == 50]
+        for emg_data_time in board_receive_data_df_8c_emg['시간']:
             plt.axvline(x=emg_data_time, color='r', linestyle='--', linewidth=3)
 
         # 초기화 되는 시간
         board_receive_data_df_8f = board_receive_data_df.loc[board_receive_data_df['state'] == 200]
-        for init_time in board_receive_data_df_8f['cg_date_time']:
+        for init_time in board_receive_data_df_8f['시간']:
             plt.axvline(x=init_time, color='b', linestyle='--', linewidth=3)
 
     plt.grid(True)
     board_picture_name = './' + ananytics_name + '/' + file_name + '_Board' + '_fig' + '.png'
     print(board_picture_name)
+    plt.rc('axes', unicode_minus=False)
     plt.savefig(board_picture_name)
 
 # Basic_Path = r'D:\USER\Desktop\Omni_Logs'

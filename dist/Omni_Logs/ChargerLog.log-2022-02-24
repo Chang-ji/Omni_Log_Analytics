@@ -1,0 +1,258 @@
+2022-02-24 09:49:30,939 INFO  [1] FastChargeMultiPort.Form1: ----------------------------------------------------------
+2022-02-24 09:49:31,001 INFO  [1] FastChargeMultiPort.Form1: PROGRAM START SW VER 1.0.09
+2022-02-24 09:49:31,001 INFO  [1] FastChargeMultiPort.Form1: ----------------------------------------------------------
+2022-02-24 09:49:34,283 ERROR [1] FastChargeMultiPort.Database.SQLite.Omni_Private_DB: >>> Exception : code = Error (1), message = System.Data.SQLite.SQLiteException (0x800007BF): SQL logic error
+table Password already exists
+   위치: System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   위치: System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   위치: System.Data.SQLite.SQLiteDataReader.NextResult()
+   위치: System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   위치: System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   위치: System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   위치: FastChargeMultiPort.Database.SQLite.Omni_Private_DB.CommandTextAfterNonQuery(String str) 파일 D:\USER\Desktop\급속 2세대 충전기 구버전 코드 및 디버깅 파일\급속충전기 임시용\옴니\FastChargeMultiPort_Omni(2021-01-27)\FastChargeMultiPort\Database\SQLite\Omni_Private_DB.cs:줄 115
+   위치: FastChargeMultiPort.Database.SQLite.Omni_Private_DB.CreateDefaultTable() 파일 D:\USER\Desktop\급속 2세대 충전기 구버전 코드 및 디버깅 파일\급속충전기 임시용\옴니\FastChargeMultiPort_Omni(2021-01-27)\FastChargeMultiPort\Database\SQLite\Omni_Private_DB.cs:줄 89
+2022-02-24 09:49:36,314 DEBUG [7] FastChargeMultiPort.MyApplication.MyApplication_Base: STATE_CHANGE : NONE ==> WAIT
+2022-02-24 09:49:36,814 DEBUG [10] FastChargeMultiPort.MyApplication.MyApplication_Base: STATE_CHANGE : WAIT ==> WAIT
+2022-02-24 09:52:45,495 DEBUG [1] FastChargeMultiPort.MyApplication.MyApplication_Base: STATE_CHANGE : WAIT ==> USER_CERTIFY
+2022-02-24 09:52:50,277 DEBUG [1] FastChargeMultiPort.MyApplication.MyApplication_Base: STATE_CHANGE : USER_CERTIFY ==> WAIT_CONNECTOR
+2022-02-24 09:52:50,464 DEBUG [1] FastChargeMultiPort.MyApplication.MyApplication_Base: STATE_CHANGE : WAIT_CONNECTOR ==> 3001
+2022-02-24 09:52:55,984 DEBUG [1] FastChargeMultiPort.MyApplication.MyApplication_Base: STATE_CHANGE : 3001 ==> CHARGING_READY
+2022-02-24 09:52:56,502 DEBUG [1] FastChargeMultiPort.MyApplication.MyApplication_Base: STATE_CHANGE : CHARGING_READY ==> 3101
+2022-02-24 09:53:09,051 DEBUG [1] FastChargeMultiPort.MyApplication.MyApplication_Base: STATE_CHANGE : 3101 ==> CHARGING
+2022-02-24 09:53:09,846 DEBUG [1] FastChargeMultiPort.MyApplication.MyApplication_Base: STATE_CHANGE : CHARGING ==> 3201
+2022-02-24 09:53:10,064 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:10,565 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:11,068 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:11,573 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:12,059 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:12,559 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:13,075 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:13,590 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:14,090 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:14,590 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:15,090 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:15,590 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:16,091 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:16,591 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:17,091 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:17,591 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:18,091 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:18,591 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:19,091 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:19,591 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:20,091 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:20,591 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:21,091 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:21,591 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:22,091 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:22,591 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:23,091 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:23,591 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:24,091 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:24,591 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:25,091 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:25,591 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:26,091 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:26,591 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:27,091 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:27,591 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:28,091 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:28,591 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:29,091 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:29,591 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:30,091 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:30,591 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:31,091 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:31,591 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:32,091 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:32,591 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:33,091 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:33,591 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:34,091 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:34,591 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:35,091 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:35,591 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:36,091 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:36,592 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:37,092 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:37,592 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:38,092 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:38,592 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:39,170 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:39,592 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:40,092 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:40,592 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:41,092 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:41,592 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:42,092 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:42,592 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:43,092 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:43,592 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:44,092 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:44,592 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:45,092 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:45,592 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:46,092 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:46,592 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:47,092 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:47,592 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:48,092 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:48,592 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:49,092 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:49,592 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:50,092 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:50,592 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:51,092 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:51,592 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:52,092 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:52,592 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:53,092 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:53,592 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:54,092 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:54,592 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:55,092 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:55,592 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:56,092 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:56,592 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:57,092 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:57,593 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:58,093 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:58,593 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:59,093 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:53:59,593 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:00,093 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:00,593 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:01,093 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:01,593 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:02,093 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:02,593 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:03,093 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:03,593 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:04,093 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:04,593 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:05,093 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:05,593 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:06,093 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:06,593 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:07,093 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:07,593 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:08,093 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:08,593 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:09,187 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:09,593 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:10,093 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:10,593 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:11,093 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:11,593 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:12,093 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:12,593 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:13,093 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:13,593 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:14,093 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:14,593 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:15,093 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:15,593 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:16,093 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:16,593 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:17,093 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:17,593 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:18,094 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:18,594 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:19,094 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:19,594 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:20,094 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:20,594 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:21,094 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:21,594 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:22,094 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:22,594 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:23,094 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:23,594 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:24,094 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:24,594 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:25,094 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:25,594 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:26,094 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:26,594 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:27,094 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:27,594 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:28,094 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:28,594 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:29,094 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:29,594 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:30,094 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:30,594 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:31,094 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:31,594 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:32,094 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:32,594 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:33,094 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:33,594 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:34,094 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:34,594 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:35,094 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:35,594 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:36,094 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:36,594 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:37,094 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:37,594 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:38,094 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:38,594 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:39,173 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:39,595 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:40,095 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:40,595 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:41,095 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:41,595 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:42,095 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:42,595 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:43,095 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:43,595 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:44,095 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:44,595 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:45,095 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:45,595 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:46,095 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:46,595 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:47,095 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:47,595 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:48,095 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:48,595 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:49,095 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:49,595 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:50,095 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:50,595 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:51,095 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:51,595 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:52,095 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:52,595 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:53,095 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:53,595 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:54,095 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:54,595 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:55,095 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:55,595 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:56,095 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:56,595 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:57,095 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:57,595 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:58,095 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:58,595 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:59,095 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:54:59,596 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:55:00,096 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:55:00,596 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:55:01,096 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:55:01,611 ERROR [1] FastChargeMultiPort.Controller.Main_Controller_State: CHARGING_STATE : 3 || ERROR CODE : 3
+2022-02-24 09:55:02,033 DEBUG [1] FastChargeMultiPort.MyApplication.MyApplication_Base: STATE_CHANGE : 3201 ==> CHARGING_COMPLETE
+2022-02-24 09:55:02,313 DEBUG [1] FastChargeMultiPort.MyApplication.MyApplication_Base: STATE_CHANGE : CHARGING_COMPLETE ==> 3301
+2022-02-24 09:55:04,634 DEBUG [1] FastChargeMultiPort.MyApplication.MyApplication_Base: STATE_CHANGE : 3301 ==> 3302
+2022-02-24 09:55:09,188 DEBUG [1] FastChargeMultiPort.MyApplication.MyApplication_Base: STATE_CHANGE : 3302 ==> FINISH
+2022-02-24 09:55:09,774 DEBUG [1] FastChargeMultiPort.MyApplication.MyApplication_Base: STATE_CHANGE : FINISH ==> 6001
+2022-02-24 09:56:11,449 DEBUG [1] FastChargeMultiPort.MyApplication.MyApplication_Base: STATE_CHANGE : 6001 ==> END
+2022-02-24 09:56:11,981 DEBUG [1] FastChargeMultiPort.MyApplication.MyApplication_Base: STATE_CHANGE : END ==> 6401
+2022-02-24 09:56:12,418 DEBUG [1] FastChargeMultiPort.MyApplication.MyApplication_Base: STATE_CHANGE : 6401 ==> 6402
+2022-02-24 09:56:15,963 DEBUG [1] FastChargeMultiPort.Mount.SamwonFA.Payment.SFA_Pay_Commo: SEND --> INS:4B34  02-20-22-02-24-09-56-15-00-00-06-30-31-30-31-30-31-30-31-30-31-4B-34-00-04-02-00-00-00-4B-E0-03
+2022-02-24 09:56:15,963 ERROR [1] FastChargeMultiPort.Mount.SamwonFA.Payment.SFA_Pay_Commo: >>> Exception : System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+   위치: FastChargeMultiPort.Mount.SamwonFA.Payment.SFA_Pay_Commo.write(Byte[] data) 파일 D:\USER\Desktop\급속 2세대 충전기 구버전 코드 및 디버깅 파일\급속충전기 임시용\옴니\FastChargeMultiPort_Omni(2021-01-27)\FastChargeMultiPort\Mount\SamwonFA\Payment\SFA_Pay_Commo.cs:줄 234
+2022-02-24 09:56:15,963 DEBUG [1] FastChargeMultiPort.MyApplication.MyApplication_Base: STATE_CHANGE : 6402 ==> WAIT

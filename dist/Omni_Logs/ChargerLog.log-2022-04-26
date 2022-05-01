@@ -1,0 +1,13 @@
+2022-04-26 16:47:41,495 INFO  [1] FastChargeMultiPort.Form1: ----------------------------------------------------------
+2022-04-26 16:47:41,542 INFO  [1] FastChargeMultiPort.Form1: PROGRAM START SW VER 1.0.09
+2022-04-26 16:47:41,542 INFO  [1] FastChargeMultiPort.Form1: ----------------------------------------------------------
+2022-04-26 16:47:44,652 ERROR [1] FastChargeMultiPort.Database.SQLite.Omni_Private_DB: >>> Exception : code = Error (1), message = System.Data.SQLite.SQLiteException (0x800007BF): SQL logic error
+table Password already exists
+   위치: System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   위치: System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   위치: System.Data.SQLite.SQLiteDataReader.NextResult()
+   위치: System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   위치: System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   위치: System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   위치: FastChargeMultiPort.Database.SQLite.Omni_Private_DB.CommandTextAfterNonQuery(String str) 파일 D:\USER\Desktop\급속 2세대 충전기 구버전 코드 및 디버깅 파일\급속충전기 임시용\옴니\FastChargeMultiPort_Omni(2021-01-27)\FastChargeMultiPort\Database\SQLite\Omni_Private_DB.cs:줄 115
+   위치: FastChargeMultiPort.Database.SQLite.Omni_Private_DB.CreateDefaultTable() 파일 D:\USER\Desktop\급속 2세대 충전기 구버전 코드 및 디버깅 파일\급속충전기 임시용\옴니\FastChargeMultiPort_Omni(2021-01-27)\FastChargeMultiPort\Database\SQLite\Omni_Private_DB.cs:줄 89
